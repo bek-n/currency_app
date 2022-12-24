@@ -5,7 +5,7 @@ class GetInformationRepository {
   GetInformationRepository._();
   static getInformation() async {
     try {
-      final url = Uri.parse("https://nbu.uz/uz/exchange-rates/json/");
+      final url = Uri.parse("https://nbu.uz/en/exchange-rates/json/");
       final res = await http.get(url);
       var data;
       if (res.statusCode == 200) {
